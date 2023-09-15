@@ -8,12 +8,12 @@ public class Gerente extends Funcionario {
         this.subordinados = subordinados;
     }
 
-    public int getNumSubordinados() {
+    public int getSubordinados() {
         return subordinados;
     }
 
-    public void setNumSubordinados(int numSubordinados) {
-        this.subordinados = numSubordinados;
+    public void setSubordinados(int subordinados) {
+        this.subordinados = subordinados;
     }
 
     @Override
