@@ -31,17 +31,19 @@ public class Pessoa {
 		verificarCPF(segundoAmigo, segundoAmigo.CPF);
 
 		
-		// nao adicionei na lista
+		// nao adicionei na lista para usar metodo ehAmigoDe
 		Pessoa terceiroAmigo = new Pessoa();
 		terceiroAmigo.nome = "Pedro";
 		terceiroAmigo.idade = 26;
 		terceiroAmigo.CPF = 8879;
 	
-
 		printar();
 
-		amigo.envelhecer(8);
+		amigo.envelhecer(2);
 		System.out.println("Nova idade: ");
+		System.out.println();
+		
+		printarIdade(amigo);
 		
 
 		System.out.printf("%s é amigo de %s? " + amigo.ehAmigoDe(segundoAmigo), amigo.nome, segundoAmigo.nome);
@@ -67,6 +69,13 @@ public class Pessoa {
 			System.out.println(amigo.CPF);
 			System.out.println("");
 		}
+	}
+	
+	public static void printarIdade(Pessoa amigo) {
+		System.out.println(amigo.nome);
+		System.out.println(amigo.idade);
+		System.out.println(amigo.CPF);
+		System.out.println("");
 	}
 
 	public Pessoa() {
